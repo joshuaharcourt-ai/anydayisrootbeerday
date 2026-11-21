@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Any Day Is Root Beer Day</title>
+  <meta name="description" content="A celebration of root beer, root beer floats, mugs, recipes, gifts, and root beer discoveries.">
+  <style>
+    :root {
+      --cream: #fff8ec;
+      --brown: #3c2418;
+      --rootbeer: #6f3d25;
+      --gold: #d9a441;
+      --muted: #6b5a4c;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--cream);
+      color: var(--brown);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--brown);
+      color: var(--cream);
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .brand { font-size: 1.15rem; font-weight: bold; }
+    nav a { color: var(--cream); text-decoration: none; margin-left: 1rem; }
+    nav a:hover { color: var(--gold); }
+    .hero {
+      text-align: center;
+      padding: 5rem 1.25rem 4rem;
+      background: radial-gradient(circle at top, #f4dfb9, var(--cream) 70%);
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .15em;
+      font-family: Arial, sans-serif;
+      font-size: .8rem;
+      font-weight: bold;
+      color: var(--rootbeer);
+    }
+    h1 { font-size: clamp(2.4rem, 6vw, 4.6rem); line-height: 1.05; margin: .6rem auto 1rem; max-width: 850px; }
+    .hero p { max-width: 650px; margin: 0 auto 1.5rem; font-size: 1.2rem; color: var(--muted); }
+    .button {
+      display: inline-block;
+      background: var(--rootbeer);
+      color: var(--white);
+      padding: .8rem 1.25rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      margin: .35rem;
+    }
+    .button.secondary { background: transparent; color: var(--rootbeer); border: 2px solid var(--rootbeer); }
+    main { max-width: 1100px; margin: auto; padding: 2rem 1.25rem 4rem; }
+    .section-title { text-align: center; margin-bottom: 2rem; }
+    .section-title h2 { font-size: 2.2rem; margin-bottom: .35rem; }
+    .section-title p { color: var(--muted); margin: 0; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.2rem; }
+    .card {
+      background: var(--white);
+      border: 1px solid #ead8bf;
+      border-radius: 18px;
+      padding: 1.5rem;
+      box-shadow: 0 5px 18px rgba(60,36,24,.06);
+    }
+    .card .emoji { font-size: 2.5rem; }
+    .card h3 { margin: .5rem 0; font-size: 1.4rem; }
+    .card p { color: var(--muted); }
+    .card a { color: var(--rootbeer); font-weight: bold; }
+    .about {
+      margin-top: 3rem;
+      background: #ead7b8;
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+    }
+    .about p { max-width: 700px; margin: auto; }
+    footer { text-align: center; background: var(--brown); color: var(--cream); padding: 1.5rem; }
+    footer a { color: var(--gold); }
+    @media (max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav a { margin: 0 .5rem; }
+      .hero { padding-top: 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">🥤 Any Day Is Root Beer Day</div>
+    <nav>
+      <a href="#discover">Discover</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">A little fizz. A lot of nostalgia.</div>
+    <h1>Any Day Is<br>Root Beer Day.</h1>
+    <p>From classic bottles and frosty floats to mugs, recipes, gifts, and unforgettable root beer experiences—celebrate your favorite soda any day of the year.</p>
+    <a class="button" href="#discover">Explore Root Beer</a>
+    <a class="button secondary" href="https://benable.com/SodaPops">Browse our Benable lists</a>
+  </section>
+
+  <main>
+    <section id="discover">
+      <div class="section-title">
+        <h2>Find Your Next Root Beer Favorite</h2>
+        <p>Start exploring a few of our favorite root beer rabbit holes.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">🍺</div>
+          <h3>Root Beer Floats</h3>
+          <p>Build the perfect float with delicious root beer, creamy vanilla ice cream, and the right glass.</p>
+          <a href="https://benable.com/SodaPops">Explore float ideas →</a>
+        </article>
+        <article class="card">
+          <div class="emoji">🥤</div>
+          <h3>Root Beer Mugs</h3>
+          <p>Find the perfect mug for ice-cold root beer or a classic soda-shop float.</p>
+          <a href="https://benable.com/SodaPops">Browse mug favorites →</a>
+        </article>
+        <article class="card">
+          <div class="emoji">🎁</div>
+          <h3>Root Beer Gifts</h3>
+          <p>Gift ideas for root beer fans—from fun finds to thoughtful treats for the enthusiast.</p>
+          <a href="https://benable.com/SodaPops">Discover gift ideas →</a>
+        </article>
+        <article class="card">
+          <div class="emoji">🗺️</div>
+          <h3>Root Beer Adventures</h3>
+          <p>Explore root beer floats, shops, and memorable root beer stops across the country.</p>
+          <a href="https://benable.com/SodaPops">Plan a root beer adventure →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>Root Beer Is More Than a Drink</h2>
+      <p>It's nostalgia, discovery, a frosty mug on a hot day, and the simple joy of sharing a float. We're collecting ideas, favorites, and experiences for fellow root beer fans. And remember: <strong>Any Day Is Root Beer Day!</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>🥤 Any Day Is Root Beer Day</p>
+    <p><a href="https://www.instagram.com/anydayisrootbeerday/">Follow along on Instagram</a> · <a href="https://benable.com/SodaPops">Shop our Benable lists</a></p>
+  </footer>
+</body>
+</html>
